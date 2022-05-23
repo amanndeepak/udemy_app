@@ -7,13 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostCreateComponent implements OnInit {
 
+  newPost="";
+  postInput=""
   constructor() { }
 
   ngOnInit(): void {
   }
 
   onAddPost(){
-    alert('post added')
+    this.newPost=this.postInput
   }
 
 }
