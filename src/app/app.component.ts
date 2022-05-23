@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udmey_app';
+
+  storedPosts :any =[];
+
+  onPostAdded(post:any){
+    this.storedPosts.push(post)
+  }
+
+
 }
